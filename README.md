@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# My School App - Hệ Thống Quản Lý Trường Học
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Một hệ thống quản lý trường học hoàn chỉnh được xây dựng với React.js, hỗ trợ 3 vai trò chính: Admin, Giáo viên và Học sinh.
 
-## Available Scripts
+## 🚀 Tính Năng
 
-In the project directory, you can run:
+### 🔑 Admin
+- Đăng nhập hệ thống
+- Tạo, sửa, xóa tài khoản giáo viên và học sinh
+- Gán tài khoản học sinh vào nhóm/lớp
+- Reset mật khẩu cho người dùng
+- Quản lý lớp học và môn học
+- Xem thống kê hệ thống
+- Cài đặt hệ thống
 
-### `npm start`
+### 👩‍🏫 Giáo viên
+- Đăng nhập, chỉnh sửa thông tin cá nhân
+- Tạo/sửa/xóa bài tập (trắc nghiệm, tự luận, thực hành)
+- Quản lý tài liệu học tập (PDF, video, link)
+- Tạo và quản lý nhóm học sinh theo lớp, môn học
+- Chấm bài và gửi phản hồi cho học sinh
+- Xem tiến độ học tập của học sinh
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 👨‍🎓 Học sinh
+- Đăng nhập, chỉnh sửa thông tin cá nhân
+- Tham gia vào nhóm học tập
+- Xem và tải xuống tài liệu theo nhóm/lớp
+- Làm bài tập và xem kết quả
+- Xem phản hồi từ giáo viên
+- Theo dõi tiến độ học tập cá nhân
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Công Nghệ Sử Dụng
 
-### `npm test`
+- **Frontend**: React.js, Tailwind CSS
+- **Icons**: Lucide React
+- **State Management**: React Context API
+- **Authentication**: Local Storage (demo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Cài Đặt
 
-### `npm run build`
+1. Clone repository:
+```bash
+git clone https://github.com/elmtrung/my-school-app.git
+cd my-school-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Cài đặt dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Chạy ứng dụng:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Mở trình duyệt và truy cập: `http://localhost:3000`
 
-### `npm run eject`
+## 🔐 Tài Khoản Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Admin
+- **Username**: admin
+- **Password**: admin123
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Giáo viên
+- **Username**: teacher1
+- **Password**: teacher123
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Học sinh
+- **Username**: student1
+- **Password**: student123
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Cấu Trúc Dự Án
 
-## Learn More
+```
+src/
+├── components/
+│   ├── Layout.jsx                 # Layout chung
+│   ├── LoginPage.jsx             # Trang đăng nhập
+│   ├── admin/
+│   │   └── UserManagementTable.jsx
+│   ├── teacher/
+│   │   └── AssignmentCreator.jsx
+│   └── student/
+│       └── CourseDashboard.jsx
+├── contexts/
+│   └── AuthContext.jsx          # Context quản lý authentication
+├── pages/
+│   ├── AdminDashboard.jsx       # Dashboard Admin
+│   ├── TeacherDashboard.jsx     # Dashboard Giáo viên
+│   └── StudentDashboard.jsx     # Dashboard Học sinh
+├── App.js                       # Component chính
+└── index.js                     # Entry point
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Hướng Dẫn Sử Dụng
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Đăng nhập**: Sử dụng một trong các tài khoản demo ở trên
+2. **Admin**: Quản lý người dùng, lớp học, và cài đặt hệ thống
+3. **Giáo viên**: Tạo bài tập, quản lý tài liệu và chấm điểm
+4. **Học sinh**: Tham gia nhóm, làm bài tập và xem kết quả
 
-### Code Splitting
+## 🔮 Tính Năng Sắp Tới
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [ ] Tích hợp Backend API
+- [ ] Hệ thống thông báo realtime
+- [ ] Lịch học tương tác
+- [ ] Báo cáo và phân tích chi tiết
+- [ ] Hỗ trợ đa ngôn ngữ
+- [ ] Mobile responsive
 
-### Analyzing the Bundle Size
+## 🤝 Đóng Góp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc submit pull request.
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by [elmtrung](https://github.com/elmtrung)
