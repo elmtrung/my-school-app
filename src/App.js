@@ -5,6 +5,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import TeacherDashboard from './pages/TeacherDashboard';
 import StudentDashboard from './pages/StudentDashboard';
 import './App.css';
+import './index.css';
 
 function AppContent() {
   const { user, loading } = useAuth();

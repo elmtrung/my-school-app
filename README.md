@@ -5,6 +5,7 @@ Một hệ thống quản lý trường học hoàn chỉnh được xây dựng
 ## 🚀 Tính Năng
 
 ### 🔑 Admin
+
 - Đăng nhập hệ thống
 - Tạo, sửa, xóa tài khoản giáo viên và học sinh
 - Gán tài khoản học sinh vào nhóm/lớp
@@ -14,6 +15,7 @@ Một hệ thống quản lý trường học hoàn chỉnh được xây dựng
 - Cài đặt hệ thống
 
 ### 👩‍🏫 Giáo viên
+
 - Đăng nhập, chỉnh sửa thông tin cá nhân
 - Tạo/sửa/xóa bài tập (trắc nghiệm, tự luận, thực hành)
 - Quản lý tài liệu học tập (PDF, video, link)
@@ -22,6 +24,7 @@ Một hệ thống quản lý trường học hoàn chỉnh được xây dựng
 - Xem tiến độ học tập của học sinh
 
 ### 👨‍🎓 Học sinh
+
 - Đăng nhập, chỉnh sửa thông tin cá nhân
 - Tham gia vào nhóm học tập
 - Xem và tải xuống tài liệu theo nhóm/lớp
@@ -39,17 +42,20 @@ Một hệ thống quản lý trường học hoàn chỉnh được xây dựng
 ## 📦 Cài Đặt
 
 1. Clone repository:
+
 ```bash
 git clone https://github.com/elmtrung/my-school-app.git
 cd my-school-app
 ```
 
 2. Cài đặt dependencies:
+
 ```bash
 npm install
 ```
 
 3. Chạy ứng dụng:
+
 ```bash
 npm start
 ```
@@ -59,14 +65,17 @@ npm start
 ## 🔐 Tài Khoản Demo
 
 ### Admin
+
 - **Username**: admin
 - **Password**: admin123
 
 ### Giáo viên
+
 - **Username**: teacher1
 - **Password**: teacher123
 
 ### Học sinh
+
 - **Username**: student1
 - **Password**: student123
 
